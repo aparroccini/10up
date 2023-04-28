@@ -1,0 +1,14 @@
+a {
+    &.link {
+        font-weight: bold;
+
+        &.primary {
+            color: $white;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

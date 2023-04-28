@@ -1,0 +1,27 @@
+button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+
+    &.btn {
+        border-radius: 25px;
+        border: 1px solid;
+        font-weight: bold;
+        padding: 1rem;
+
+        &.primary {
+            background-color: transparent;
+            border-color: $white;
+            color: $white;
+            transition: $transition-simple;
+
+            &:hover {
+                background-color: $white;
+                color: $chinese-black;
+            }
+    
+        }
+    }
+
+    
+}

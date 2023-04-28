@@ -1,0 +1,23 @@
+.homepage {
+    .hero {
+        display: flex;
+        align-items: center;
+
+        .content {
+
+            div {
+                display: flex;
+                align-items: center;
+                padding-top: 1rem;
+
+                .link {
+                    padding: 1rem;
+                }
+            }
+        }
+
+        img {
+            width: 50%;
+        }
+    }
+}
