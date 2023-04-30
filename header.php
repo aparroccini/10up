@@ -41,3 +41,35 @@
   <a class="skip-to-content-link" href="#main">
     Skip to content
   </a>
+
+  <main aria-labelledby="page_title" role="main">
+    <section class="homepage section-1 full-bleed dark">
+      <header class="header">
+        <a href="#">
+          <img src="<?php echo esc_url( get_template_directory_uri() . '/img/site_logo.svg' ); ?>" class="brand-logo" alt="Logo">
+        </a>
+        <nav role=”navigation” class="main-nav">
+          <button aria-label="Open Navigation" class="nav-btn">
+          <img src="<?php echo esc_url( get_template_directory_uri() . '/img/icon_menu.svg' ); ?>" alt="" >
+        </button>
+        <div class="nav-box hide">
+          <button aria-label="Close Navigation" class="close-btn">
+          <img src="<?php echo esc_url( get_template_directory_uri() . '/img/icon_close.svg' ); ?>" alt="" >
+          </button>
+          
+          <?php
+// Primary navigation menu.
+wp_nav_menu( array(
+    [
+        'menu_class' => 'nav-ul',
+        'container' => false,
+        'theme_location' => 'header-menu',
+        'items_wrap'      => '<ul>%3$s</ul>',
+        'depth' => 1
+    ]
+)  );
+?>
+
+        </div>
+      </nav>
+      </header>

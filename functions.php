@@ -9,15 +9,18 @@ function add_viewport_meta_tag() {
  
  wp_register_script( 'main', get_template_directory_uri().'/js/main.js', array(), '1.0.0', true );
  
-
  wp_enqueue_script( 'main' );
 
 add_theme_support( "menus" );
 
 // Create New Menu
-If(function_exists("register_nav_menus")){
-  register_nav_menus( array( $location => $description ) );
+function register_my_menus() {
+  register_nav_menus( array(
+    'header-menu' => 'Header Menu',
+  ) );
 }
+add_action( 'after_setup_theme', 'register_my_menus' );
+add_action( 'after_setup_theme', 'register_my_menus' 
 
 //This is to activate the featured image in Posts
 if(function_exists("add_theme_support")){

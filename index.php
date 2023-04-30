@@ -16,29 +16,7 @@
 
 get_header(); ?>
  
- <main aria-labelledby="page_title" role="main">
-    <section class="homepage section-1 full-bleed dark">
-      <header class="header">
-        <a href="#">
-          <img src="<?php echo esc_url( get_template_directory_uri() . '/img/site_logo.svg' ); ?>" class="brand-logo" alt="Logo">
-        </a>
-        <nav role=”navigation” class="main-nav">
-          <button aria-label="Open Navigation" class="nav-btn">
-          <img src="<?php echo esc_url( get_template_directory_uri() . '/img/icon_menu.svg' ); ?>" alt="" >
-        </button>
-        <div class="nav-box hide">
-          <button aria-label="Close Navigation" class="close-btn">
-          <img src="<?php echo esc_url( get_template_directory_uri() . '/img/icon_close.svg' ); ?>" alt="" >
-          </button>
-          <ul>
-            <li><a href="#">News</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      </header>
+ 
       <div class="hero inner">
         <aside class="content" id="main">
           <h4 class="green">Who we are</h4>
