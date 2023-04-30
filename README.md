@@ -13,3 +13,7 @@ then
 to make changes to the css. 
 
 move the theme to your wordpress theme folder and you're in business. 
+
+Updates: 
+
+4.30 - added menu support
